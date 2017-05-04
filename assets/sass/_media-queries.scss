@@ -1,0 +1,42 @@
+@media screen and (min-width: 480px) {
+
+	.main__bg {
+		height: 50%;
+	}
+
+	.bull-img {
+		height: 60%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.main__bg {
+		height: 80%;
+	}
+
+	.bull-img,
+ 	.girl-img {
+		max-width: 50%;
+		height: auto;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	.main__bg {
+		height: 100%;
+	}
+
+	.headline {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		text-align: center;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 4em;
+	}
+}

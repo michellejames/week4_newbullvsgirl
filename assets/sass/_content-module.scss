@@ -1,0 +1,57 @@
+.bull-content-module,
+.girl-content-module {
+	display: inline-block;
+  	position: relative;
+
+  	.content-module-headline {
+		font-family: 'Permanent Marker', cursive;
+		text-align: center;
+		margin-bottom: 20px;
+  	}
+}
+
+.fact {
+	height: 350px;
+	position: relative;
+	width: 350px;
+	display: flex;
+	margin-top: 50px;
+	border: 2px solid white;
+	line-height: 100px;
+	font-size: 1.2em;
+
+  	.fun-fact,
+  	.fun-fact-flipped {
+  		backface-visibility: hidden;
+  		border: 1px solid red;
+  		height: 100%;
+  		left: 0;
+  		position: absolute;
+  		top: 0;
+  		text-align: center;
+	    -webkit-transform: rotateY(0deg);
+	    transition: 0.2s;
+	    width: 100%;
+	    padding-top: 50px;
+  	}
+	
+	.fun-fact {
+		background-color: red;
+		z-index: 9999;
+	}
+
+	.fun-fact-flipped {
+		background-color: green;
+	    -webkit-transform: rotateY(-180deg);
+	    z-index: 500;
+	}
+
+	&.flipped {
+	    .fun-fact {
+	        -webkit-transform: rotateY(-180deg);
+	    }
+	    .fun-fact-flipped {
+            -webkit-transform: rotateY(0deg);
+	    }
+	}
+}

@@ -5842,7 +5842,7 @@ html, body {
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 20%;
+  height: 40%;
   border-bottom: 5px solid white; }
 
 .headline {
@@ -5928,13 +5928,15 @@ html, body {
     background-color: green;
     -webkit-transform: rotateY(-180deg);
     z-index: 500; }
-  .fact.flipped {
+  .fact.flipped .fun-fact {
     -webkit-transform: rotateY(-180deg); }
+  .fact.flipped .fun-fact-flipped {
+    -webkit-transform: rotateY(0deg); }
 
 /* 2. Content ================================= */
 @media screen and (min-width: 480px) {
   .main__bg {
-    height: 40%; }
+    height: 50%; }
   .nav {
     display: flex;
     justify-content: space-around; }

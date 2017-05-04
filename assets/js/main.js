@@ -7,12 +7,10 @@ $(function () {
 		if ($('.bull-paragraph:visible').length > 0) {
 			$(".bull-paragraph").hide();
 			$(".bull-content-module").hide();
-
 		} else {
 			$(".bull-paragraph").show();
 			$(".bull-content-module").show();
 		}
-
 	});
 
 	$('.girl-img').on("click", function () {
@@ -24,14 +22,9 @@ $(function () {
 			$(".girl-paragraph").show();
 			$(".girl-content-module").show();
 		}
-
 	});
 
 	$(".fact").on("click", function () {
-		// if ($('.fun-fact1:visible').length > 0) {
-		// 	$(this).toggleClass(".fun-fact1-flipped").html("test");
-		// }
-
 		$(this).toggleClass("flipped");
 	});
 
@@ -41,14 +34,3 @@ $(function () {
 
 
 
-	// $("#bull-button").on("click", function () {
-	// 	if ($(".main:visible, .girl:visible").length > 0) { 
-
-	// 		$(".main, .girl").hide();
-	// 		$(".bull").show();
-
-	// 	} else {
-	// 		$(".main").show();
-	// 		$(".bull, .girl").hide();
-	// 	}
-	// });

@@ -1,0 +1,31 @@
+.bull,
+.girl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bull-name,
+  .girl-name {
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .bull-img,
+  .girl-img {
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 20px;
+
+  }
+
+  .bull-paragraph,
+  .girl-paragraph {
+  	width: 80%;
+  	margin: 20px;
+  	border: 2px solid red;
+  	padding: 10px;
+  	text-align: center;
+  }
+}
